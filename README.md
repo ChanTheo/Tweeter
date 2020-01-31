@@ -17,6 +17,7 @@ A straightforward single page AJAX-based clone of Twitter. Uses HTML, CSS, JS, j
 - Node 5.10.x or above
 
 ## Example Screenshots:
-!["Screenshot of the login page"](docs/login-page.png)
-!["Screenshot of the page the user is directed to after entering a long url"](docs/new-url-after-creation.png)
-!["Screenshot of the urls-page, showing all the urls a user has entered"](docs/urls-page.png)
+!["Page when new tweet section is toggeled up"](https://github.com/ChanTheo/Tweeter/blob/master/docs/Tweeter_Write_A_New_Tweet_Hidden.png?raw=true)
+!["Tweet Example"](https://github.com/ChanTheo/Tweeter/blob/master/docs/Tweeter_New_Tweet.png?raw=true)
+!["Error Message: Maximum Length Exceeded Display](https://github.com/ChanTheo/Tweeter/blob/master/docs/Tweeter_Maximum_Length_Error.png?raw=true)
+
