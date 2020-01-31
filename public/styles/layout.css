@@ -18,8 +18,102 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+#tweets-container{
+  background-color: #f4f1ec;
+  width: 90%;
+  margin: auto;
+  font-family: Source Sans Pro, sans-serif;
+  flex-direction: column;
+  display: flex;
+  margin-top: 2em;
+  
+  
+}
+
+
+.tweet{
+  padding: 1em;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 1.5em;
+
+}
+
+.tweet:hover{
+  box-shadow: 10px 10px 5px rgb(139, 139, 214);
+}
+
+.tweet-header{
+display: flex;
+}
+
+
+
+.avatar{
+  justify-content: flex-start;
+  margin-right: 0.5em;
+  align-self: center;
+}
+
+.tweet__username{
+  justify-content: flex-start;
+  padding-top: 1em;
+}
+
+.handle{
+  margin-left: auto;
+  padding: 1em;
+  visibility: collapse;
+  color:  rgb(139, 139, 214);
+}
+.tweet:hover .handle{
+  visibility: visible;
+}
+.icon{
+  visibility: collapse;
+}
+
+
+.hide {
+  display: none;
+}
+
+.tweet:hover .icon{
+visibility: visible;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .page{
+    display: flex;
+    margin-top: 5em;
+  }
+  
+
+  #header{
+    
+    padding: 3em;
+    margin-top: 200 px;
+    flex: 1;
+    
+    
+  }
+.nav-bar {
+  
+  background-color: #4056A1;
+}
+
+.container {
+  flex: 2;
+}
+
+
+
+}

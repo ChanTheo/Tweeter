@@ -1,0 +1,73 @@
+
+.nav-bar {
+  height: 120px;
+  width: 100%;
+  background-color: transparent;
+  color: FFFFF;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  top: 1.5em;
+  left: 1.5em;
+  color: white;
+  position: relative;
+  align-self: flex-start;
+  font-size: 125%;
+}
+.nav-bar__new-tweet{
+  align-self: auto;
+  color: white;
+  top: 1.5em;
+  right: 1.5em;
+  position: relative;
+  font-size: 80%;
+  flex-direction: column;
+}
+
+#nav-bar__tweet-button{
+  margin-left: 50%;
+  display: inline-block;
+  position: relative;
+}
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+#nav-bar__tweet-button:active {
+  color: orange; 
+}
+
+

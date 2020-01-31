@@ -1,0 +1,30 @@
+
+#header {
+  height: 400px;
+  width: 100%;
+  background-color: #d8842a;
+  background-image: url(https://www.transparenttextures.com/patterns/60-lines.png);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+
+.avatar {
+  align-self: center;
+  
+
+
+}
+
+.userName {
+  align-self: center;
+
+
+}
+
+
