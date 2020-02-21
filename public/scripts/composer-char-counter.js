@@ -2,7 +2,7 @@
 $(document).ready(function() {
   // --- our code goes here ---
 
-  $("textarea").keypress(function() {
+  $("textarea").on("input", function() {
     let char = $(this).val();
     let numChar = 140 - char.length;
     

@@ -35,9 +35,10 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(obj) {
-  
-    obj.created_at = unixTimeToDate(obj.created_at);
-
+    
+    // let time = moment().startOf('hour').fromNow();
+    obj.created_at = moment().fromNow()
+    
     let $tweet = `
 <article class="tweet">
 <header>
@@ -77,23 +78,15 @@ ${obj.user.handle}
     return $tweet;
   };
 
-  const unixTimeToDate = function(time) {
-    let date = new Date(time * 1000);
+  // const timeToDate = function() {
+  //   const randomCondition = (Math.random * 1) > 1.5
+  // const time = (Math.random() * 24).toFixed(0);
+  //   return randomCondition ? time + " hours ago": time + " days ago"
+
+  // };
+
+
   
-
-    const hours = date.getHours();
-    const minutes = "0" + date.getMinutes();
-    const seconds = "0" + date.getSeconds();
-    date = date.toLocaleDateString();
-   
-
-    const returnTime = date.substr(0,5) + hours + ":" + minutes.substr(-2) + ":" + seconds.substr(-2);
-
-    return returnTime;
-  };
-
-
-  // considering changing the p tag for the body
 
   // renderTweets function
   // loops through an array of object tweets and calls createTweetElement on everyone
